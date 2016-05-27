@@ -3,7 +3,7 @@ require 'active_support/core_ext/hash/conversions'
 
 module WxPay
   module Service
-    GATEWAY_URL = 'https://api.mch.weixin.qq.com'
+    GATEWAY_URL = 'https://api.mch.weixin.qq.com/sandbox'
 
     INVOKE_UNIFIEDORDER_REQUIRED_FIELDS = %i(body out_trade_no total_fee spbill_create_ip notify_url trade_type)
     def self.invoke_unifiedorder(params, options = {})
